@@ -6,7 +6,7 @@ public class Student
 
     public Student()
     {
-        setName("Thomas");
+        setName("Maryam");
         setAlter(40);
         setMannlich(true);
     }
