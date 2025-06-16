@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graph Analysis Tool</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Graph Analysis Tool</h1>
+    <div class="panel controls">
+      <label>Graph (CSV)</label>
+      <input type="file" id="fileInput" accept=".csv" />
+      <button id="loadBtn">Laden</button>
+      <label>Algorithmus</label>
+      <select id="algorithm">
+        <option value="metrics">Metriken</option>
+        <option value="bfs">Breitensuche</option>
+        <option value="dfs">Tiefensuche</option>
+        <option value="dijkstra">Dijkstra</option>
+        <option value="components">Komponenten</option>
+        <option value="articulation">Artikulationen</option>
+        <option value="bridges">Brücken</option>
+        <option value="euler">Euler-Pfad/Zyklus</option>
+        <option value="spanning">Spannbaum</option>
+        <option value="scc">Starke Komponenten</option>
+        <option value="blocks">Blöcke</option>
+      </select>
+      <button id="runBtn">Ausführen</button>
+    </div>
+    <div id="output" class="panel">
+      Bitte Graph laden und Algorithmus wählen.
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
